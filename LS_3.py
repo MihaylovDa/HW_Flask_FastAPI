@@ -33,7 +33,7 @@ def register():
         user = User(first_name=first_name, last_name=last_name, email=email, password=password)
         db.session.add(user)
         db.session.commit()
-        return 'Пользователь зарегистрирован успешно!'
+        return 'РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅ СѓСЃРїРµС€РЅРѕ!'
     
     return render_template('register.html')
 
