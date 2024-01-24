@@ -23,12 +23,12 @@ class Product(BaseModel):
     description: str
     price: float
 
-# Заглушки для баз данных
+# Р—Р°РіР»СѓС€РєРё РґР»СЏ Р±Р°Р· РґР°РЅРЅС‹С…
 users = []
 orders = []
 products = []
 
-# Маршруты для пользователей
+# РњР°СЂС€СЂСѓС‚С‹ РґР»СЏ РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№
 @app.get("/users")
 def get_users():
     return users
@@ -64,7 +64,7 @@ def delete_user(user_id: int):
             return {"message": "User deleted successfully"}
     return {"message": "User not found"}
 
-# Маршруты для заказов
+# РњР°СЂС€СЂСѓС‚С‹ РґР»СЏ Р·Р°РєР°Р·РѕРІ
 @app.get("/orders")
 def get_orders():
     return orders
@@ -100,7 +100,7 @@ def delete_order(order_id: int):
             return {"message": "Order deleted successfully"}
     return {"message": "Order not found"}
 
-# Маршруты для товаров
+# РњР°СЂС€СЂСѓС‚С‹ РґР»СЏ С‚РѕРІР°СЂРѕРІ
 @app.get("/products")
 def get_products():
     return products
